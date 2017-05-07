@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Tue May 02 14:21:50 2017">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="a986c7a2885445eea38282698f236bd1" type="ProjectID"/>
+<property name="ProjectIteration" value="10" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="2" type="JavaHandler"/>
+<property name="EditDelete" value="1" type="JavaHandler"/>
+<property name="EditUndo" value="1" type="JavaHandler"/>
+<property name="ElfFileAssociation" value="1" type="JavaHandler"/>
+<property name="FileExit" value="1" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="OpenCheckpoint" value="1" type="JavaHandler"/>
+<property name="OpenHardwareManager" value="1" type="JavaHandler"/>
+<property name="OpenProject" value="1" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="4" type="JavaHandler"/>
+<property name="RunBitgen" value="7" type="JavaHandler"/>
+<property name="RunImplementation" value="2" type="JavaHandler"/>
+<property name="RunSchematic" value="9" type="JavaHandler"/>
+<property name="RunSynthesis" value="5" type="JavaHandler"/>
+<property name="SaveAllFiles" value="3" type="JavaHandler"/>
+<property name="SaveProjectAs" value="1" type="JavaHandler"/>
+<property name="ShowView" value="7" type="JavaHandler"/>
+<property name="SimulationClose" value="21" type="JavaHandler"/>
+<property name="SimulationRestart" value="31" type="JavaHandler"/>
+<property name="SimulationRun" value="48" type="JavaHandler"/>
+<property name="SimulationRunAll" value="3" type="JavaHandler"/>
+<property name="SimulationRunForTime" value="77" type="JavaHandler"/>
+<property name="ViewTaskImplementation" value="1" type="JavaHandler"/>
+<property name="ViewTaskProjectManager" value="22" type="JavaHandler"/>
+<property name="ViewTaskRTLAnalysis" value="1" type="JavaHandler"/>
+<property name="ViewTaskSimulation" value="1" type="JavaHandler"/>
+<property name="WaveformSaveConfiguration" value="2" type="JavaHandler"/>
+<property name="ZoomFit" value="3" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="PAResourceAtoD.ClosePlanner_YES, Yes" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_DEVICE, 104012, 446699" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_DEVICE, 111937, 303323" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_DEVICE, 113018, 72048" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_DEVICE, 211101, 257932" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_DEVICE, 237183, 285887" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_DEVICE, 259834, 288481" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_DEVICE, 276927, 340428" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_DEVICE, 330963, 338915" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_DEVICE, 374462, 152562" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_DEVICE, 69789, 410675" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_DEVICE, 73391, 426885" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_DEVICE, 93204, 410675" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_DEVICE, 96356, 154003" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_DEVICE, Device" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="70" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="49" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>
