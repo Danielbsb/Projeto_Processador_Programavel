@@ -22,7 +22,9 @@ module Bloco_de_Controle(
     output logic [3:0] RF_Rq_addr,
     output logic RF_Rq_rd,
     output logic [3:0] ALU_s,
-    output logic [2:0] deslocamento
+    output logic [2:0] deslocamento,
+    output logic InReg_ld,
+    output logic OutRed_ld
     //output logic leds_en,
     //output logic leds_clr,
     //output logic mux_SW
@@ -40,9 +42,9 @@ module Bloco_de_Controle(
                               saltar_se_zero = 4'b1000,
                               saltar = 4'b1001,
                               shiftl = 4'b1010,
-                              shiftr = 4'b1011
-                              //inputS = 4'b1011,
-                              //outputL = 4'b1100
+                              shiftr = 4'b1011,
+                              inputS = 4'b1100,
+                              outputL = 4'b1101
                               } statetype;
     
     statetype state, nextstate;
@@ -76,8 +78,8 @@ module Bloco_de_Controle(
                                4'b0101:         nextstate = saltar_se_zero;
                                4'b0110:         nextstate = shiftl;
                                4'b0111:         nextstate = shiftr;
-                               //4'b0111:         nextstate = inputS;
-                               //4'b1000:         nextstate = outputL;
+                               4'b1000:         nextstate = inputS;
+                               4'b1001:         nextstate = outputL;
                                default:         nextstate = inicio; // should never happen.
                         endcase
         carregar:                               nextstate = busca;
@@ -88,10 +90,10 @@ module Bloco_de_Controle(
         saltar_se_zero: if(RF_Rp_zero)          nextstate = saltar;
                         else                    nextstate = busca;
         saltar:                                 nextstate = busca;
-        shiftl:                                  nextstate = busca;
-        shiftr:                                  nextstate = busca;
-        //inputS:                                 nextstate = busca;
-        //outputL:                                nextstate = busca;
+        shiftl:                                 nextstate = busca;
+        shiftr:                                 nextstate = busca;
+        inputS:                                 nextstate = busca;
+        outputL:                                nextstate = busca;
         default:                                nextstate = inicio;
       endcase;
     
@@ -105,7 +107,7 @@ module Bloco_de_Controle(
     assign RF_s0 = (state == carregar);
     assign RF_W_wr = (state == carregar) || (state == somar) || (state == carregar_constante) || (state == subtrair)||(state == shiftl) ||(state == shiftr);
     assign D_wr = (state == armazenar);//|| state == inputS);
-    assign RF_Rp_rd = (state == armazenar) || (state == somar) || (state == subtrair) || (state == saltar_se_zero) ||(state == shiftl) || (state == shiftr);//|| (state == outputL);    
+    assign RF_Rp_rd = (state == armazenar) || (state == somar) || (state == subtrair) || (state == saltar_se_zero) ||(state == shiftl) || (state == shiftr)|| (state == outputL);    
     assign RF_Rq_rd = (state == somar) || (state == subtrair)||(state == shiftl) ||(state == shiftr);
    // assign ALU_s0 = (state == somar) || (state == shiftl)||(state == shiftr);
     assign RF_s1 = (state == carregar_constante);
@@ -114,6 +116,8 @@ module Bloco_de_Controle(
     //assign mux_SW = (state==inputS); 
     //assign leds_en = (state==outputL); 
     //assign leds_clr = ~(state==outputL || state == busca);
+    assign InReg_ld = (state == inputS);
+    assign OutRed_ld = (state == outputL);
      
     //mult-bits outputs
     always_comb 
@@ -158,12 +162,12 @@ module Bloco_de_Controle(
         RF_Rq_addr = rc;
         ALU_s=4'b1001;
         end
-        //inputS : begin
-        //    D_addr = d;
+        //inputS : begin    // inputS não usa sinais com mais de bit. 
+        //    InReg_ld = d;
         //end
-        //outputL: begin
-        //    RF_Rp_addr = ra;
-        //end    
+        outputL: begin
+            RF_Rp_addr = rb;
+        end    
       endcase
      
 endmodule

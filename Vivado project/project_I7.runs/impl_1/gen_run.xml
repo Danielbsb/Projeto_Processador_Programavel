@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1493745493">
-  <File Type="OPT-DCP" Name="super_top_level_opt.dcp"/>
   <File Type="ROUTE-STATUS-PB" Name="super_top_level_route_status.pb"/>
   <File Type="PA-TCL" Name="super_top_level.tcl"/>
+  <File Type="OPT-DCP" Name="super_top_level_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="super_top_level_timing_summary_init.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="super_top_level_methodology_drc_opted.rpt"/>
   <File Type="RDI-RDI" Name="super_top_level.vdi"/>
   <File Type="PWROPT-DRC" Name="super_top_level_drc_pwropted.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="super_top_level_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="super_top_level_timing_summary_init.rpt"/>
   <File Type="OPT-DRC" Name="super_top_level_drc_opted.rpt"/>
   <File Type="PWROPT-DCP" Name="super_top_level_pwropt.dcp"/>
   <File Type="OPT-HWDEF" Name="super_top_level.hwdef"/>
@@ -31,8 +31,8 @@
   <File Type="ROUTE-DRC" Name="super_top_level_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="super_top_level_drc_routed.pb"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="super_top_level_methodology_drc_routed.rpt"/>
-  <File Type="BG-BIT" Name="super_top_level.bit"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="super_top_level_methodology_drc_routed.pb"/>
+  <File Type="BG-BIT" Name="super_top_level.bit"/>
   <File Type="ROUTE-PWR" Name="super_top_level_power_routed.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="super_top_level_power_summary_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="super_top_level_power_routed.rpx"/>

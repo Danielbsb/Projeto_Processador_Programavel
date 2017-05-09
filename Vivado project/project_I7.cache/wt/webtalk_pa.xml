@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Tue May 02 14:21:50 2017">
+<application name="pa" timeStamp="Mon May 08 22:09:22 2017">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="a986c7a2885445eea38282698f236bd1" type="ProjectID"/>
 <property name="ProjectIteration" value="10" type="ProjectIteration"/>
@@ -17,7 +17,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
-<property name="AddSources" value="2" type="JavaHandler"/>
+<property name="AddSources" value="3" type="JavaHandler"/>
 <property name="EditDelete" value="1" type="JavaHandler"/>
 <property name="EditUndo" value="1" type="JavaHandler"/>
 <property name="ElfFileAssociation" value="1" type="JavaHandler"/>
@@ -25,13 +25,13 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="NewProject" value="1" type="JavaHandler"/>
 <property name="OpenCheckpoint" value="1" type="JavaHandler"/>
 <property name="OpenHardwareManager" value="1" type="JavaHandler"/>
-<property name="OpenProject" value="1" type="JavaHandler"/>
+<property name="OpenProject" value="2" type="JavaHandler"/>
 <property name="ProjectSettingsCmdHandler" value="4" type="JavaHandler"/>
 <property name="RunBitgen" value="7" type="JavaHandler"/>
 <property name="RunImplementation" value="2" type="JavaHandler"/>
 <property name="RunSchematic" value="9" type="JavaHandler"/>
 <property name="RunSynthesis" value="5" type="JavaHandler"/>
-<property name="SaveAllFiles" value="3" type="JavaHandler"/>
+<property name="SaveAllFiles" value="4" type="JavaHandler"/>
 <property name="SaveProjectAs" value="1" type="JavaHandler"/>
 <property name="ShowView" value="7" type="JavaHandler"/>
 <property name="SimulationClose" value="21" type="JavaHandler"/>
@@ -47,25 +47,405 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ZoomFit" value="3" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
-<property name="PAResourceAtoD.ClosePlanner_YES, Yes" value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.PAViews_DEVICE, 104012, 446699" value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.PAViews_DEVICE, 111937, 303323" value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.PAViews_DEVICE, 113018, 72048" value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.PAViews_DEVICE, 211101, 257932" value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.PAViews_DEVICE, 237183, 285887" value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.PAViews_DEVICE, 259834, 288481" value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.PAViews_DEVICE, 276927, 340428" value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.PAViews_DEVICE, 330963, 338915" value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.PAViews_DEVICE, 374462, 152562" value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.PAViews_DEVICE, 69789, 410675" value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.PAViews_DEVICE, 73391, 426885" value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.PAViews_DEVICE, 93204, 410675" value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.PAViews_DEVICE, 96356, 154003" value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.PAViews_DEVICE, Device" value="1" type="GuiResourceData"/>
-<property name="RDIResource.BaseDialog_OK, OK" value="1" type="GuiResourceData"/>
+<property name="ALU.sv, 181, 252" value="1" type="GuiResourceData"/>
+<property name="ALU.sv, 196, 215" value="1" type="GuiResourceData"/>
+<property name="ALU.sv, 236, 201" value="1" type="GuiResourceData"/>
+<property name="ALU.sv, 256, 177" value="1" type="GuiResourceData"/>
+<property name="ALU.sv, 262, 159" value="1" type="GuiResourceData"/>
+<property name="ALU.sv, 274, 251" value="2" type="GuiResourceData"/>
+<property name="ALU.sv, 282, 145" value="1" type="GuiResourceData"/>
+<property name="ALU.sv, 299, 215" value="1" type="GuiResourceData"/>
+<property name="ALU.sv, 360, 228" value="1" type="GuiResourceData"/>
+<property name="ALU.sv, 368, 217" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 100, 133" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 100, 175" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 102, 231" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 103, 131" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 103, 146" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 103, 178" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 105, 127" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 105, 197" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 106, 129" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 106, 131" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 108, 131" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 109, 130" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 109, 173" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 111, 110" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 112, 246" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 116, 126" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 116, 220" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 117, 188" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 119, 178" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 119, 191" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 121, 154" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 122, 114" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 122, 228" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 124, 127" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 127, 99" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 128, 129" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 129, 129" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 129, 171" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 129, 194" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 129, 195" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 129, 77" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 131, 121" value="2" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 132, 128" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 134, 185" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 137, 183" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 137, 200" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 138, 77" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 144, 172" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 145, 148" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 145, 195" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 153, 143" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 154, 126" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 156, 131" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 156, 214" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 160, 165" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 160, 177" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 161, 176" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 162, 179" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 163, 206" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 164, 183" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 166, 171" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 167, 196" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 170, 134" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 171, 112" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 171, 127" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 178, 108" value="2" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 178, 128" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 178, 202" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 178, 209" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 179, 200" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 18, 176" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 18, 207" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 180, 183" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 180, 214" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 180, 249" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 182, 106" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 183, 179" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 183, 231" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 184, 179" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 185, 146" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 187, 122" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 190, 180" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 191, 182" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 191, 196" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 192, 143" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 194, 184" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 194, 97" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 195, 131" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 195, 201" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 197, 227" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 198, 181" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 20, 126" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 200, 155" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 201, 166" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 201, 194" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 204, 198" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 205, 143" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 206, 130" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 206, 131" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 208, 164" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 209, 144" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 209, 156" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 209, 212" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 210, 132" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 210, 177" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 210, 244" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 211, 163" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 211, 185" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 212, 178" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 212, 40" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 214, 243" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 215, 180" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 215, 196" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 216, 138" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 216, 161" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 218, 194" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 219, 196" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 224, 149" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 225, 156" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 225, 160" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 225, 200" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 226, 179" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 227, 199" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 227, 75" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 232, 178" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 233, 174" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 235, 196" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 238, 124" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 238, 182" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 241, 178" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 243, 181" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 246, 136" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 252, 243" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 257, 163" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 259, 212" value="2" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 259, 212, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 270, 167" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 270, 215" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 275, 225" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 277, 227" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 285, 230" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 293, 163" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 293, 207" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 305, 235" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 310, 144" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 32, 236" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 320, 175" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 322, 170" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 336, 196" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 336, 76" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 345, 251" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 346, 183" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 347, 150" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 357, 198" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 361, 185" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 366, 221" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 369, 181" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 382, 96" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 384, 160" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 388, 175" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 41, 58" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 413, 245" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 416, 85" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 427, 180" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 433, 232" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 437, 157" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 46, 127" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 46, 215" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 463, 74" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 467, 74" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 487, 159" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 488, 97" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 49, 132" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 500, 174" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 503, 163" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 508, 193" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 51, 131" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 510, 226" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 52, 126" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 52, 99" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 540, 175" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 55, 94" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 57, 221" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 58, 111" value="2" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 58, 179" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 64, 162" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 65, 126" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 66, 145" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 67, 146" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 68, 163" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 69, 111" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 69, 114" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 69, 157" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 69, 177" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 69, 214" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 70, 179" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 70, 245" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 70, 265" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 73, 177" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 73, 227" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 73, 265" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 73, 75" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 74, 127" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 75, 162" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 75, 75" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 76, 75" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 79, 119" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 79, 194" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 79, 213" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 79, 223" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 80, 195" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 82, 214" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 83, 149" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 83, 164" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 84, 124" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 84, 192" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 85, 113" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 85, 76" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 86, 178" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 87, 173" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 87, 177" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 87, 183" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 87, 200" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 87, 224" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 90, 161" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 93, 193" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 93, 202" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 94, 43" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 96, 108" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 96, 122" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 97, 122" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 97, 123" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 98, 129" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 98, 193" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 98, 214" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 99, 131" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 99, 165" value="1" type="GuiResourceData"/>
+<property name="Bloco_de_Controle.sv, 99, 217" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, super_top_level (super_top_level.sv" value="105" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager, Add Sources], 2, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager], 0" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager], 0, true" value="6" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager], 0, true, false, false, false, false, true" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GettingStartedView_OPEN_PROJECT, Open Project" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_FILE, File" value="4" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, Open Recent File" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, Open Recent Project" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Synthesis, [Common 17-55] 'set_property' expects at least one object. [C:/Users/Daniel/Documents/ARQUIVOS_FACULDADE/PROJETO_GILMAR/project_I7.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc:114]. ], 1, false" value="9" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Synthesis, [Common 17-55] 'set_property' expects at least one object. [C:/Users/Daniel/Documents/ARQUIVOS_FACULDADE/PROJETO_GILMAR/project_I7.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc:114]. ], 1, false, false, false, false, false, true" value="4" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Vivado Commands], 0" value="3" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgView_WARNING_MESSAGES, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.OpenFileAction_OK, OK" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_CODE, Code" value="1" type="GuiResourceData"/>
+<property name="RDIResource.ConfirmSaveTextEditsDialog_YES, Yes" value="1" type="GuiResourceData"/>
+<property name="RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, (String" value="1" type="GuiResourceData"/>
+<property name="RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, sw" value="2" type="GuiResourceData"/>
+<property name="RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, sw, true" value="4" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_SAVE_ALL_FILES, Save All Files..." value="1" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_SAVE_FILE, (String" value="9" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_SAVE_FILE, Save File" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 105, 247" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 106, 123" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 107, 182" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 108, 132" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 110, 242" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 110, 94" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 113, 233" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 114, 146" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 114, 79" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 116, 243" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 12, 97" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 120, 233" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 121, 164" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 122, 99" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 123, 111" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 124, 164" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 124, 200" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 125, 179" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 126, 32" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 126, 77" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 134, 155" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 138, 143" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 138, 250" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 139, 131" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 14, 195" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 141, 127" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 141, 93" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 142, 164" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 143, 160" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 143, 64" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 145, 143" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 145, 166" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 147, 134" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 149, 137" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 150, 131" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 151, 128" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 153, 127" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 153, 132" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 153, 247" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 154, 60" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 160, 93" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 163, 162" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 165, 167" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 167, 160" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 167, 91" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 178, 60" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 187, 168" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 187, 210" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 187, 80" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 189, 198" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 193, 145" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 193, 77" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 195, 140" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 196, 144" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 2, 71" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 200, 128" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 202, 176" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 203, 163" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 204, 74" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 206, 166" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 207, 126" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 207, 144" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 212, 147" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 213, 170" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 217, 198" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 219, 122" value="2" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 223, 151" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 223, 221" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 224, 92" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 228, 164" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 231, 177" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 232, 175" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 237, 196" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 239, 93" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 248, 182" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 260, 155" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 263, 226" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 268, 163" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 275, 159" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 280, 244" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 29, 181" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 295, 162" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 3, 248" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 4, 125" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 458, 169" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 5, 118" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 5, 129" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 6, 120" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 65, 209, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 653, 216" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 93, 157" value="1" type="GuiResourceData"/>
+<property name="Unidade_controladora.sv, 97, 168" value="1" type="GuiResourceData"/>
+<property name="datapath.sv, 108, 161" value="1" type="GuiResourceData"/>
+<property name="datapath.sv, 128, 160" value="1" type="GuiResourceData"/>
+<property name="datapath.sv, 128, 197" value="1" type="GuiResourceData"/>
+<property name="datapath.sv, 129, 161" value="1" type="GuiResourceData"/>
+<property name="datapath.sv, 135, 154" value="1" type="GuiResourceData"/>
+<property name="datapath.sv, 142, 160" value="1" type="GuiResourceData"/>
+<property name="datapath.sv, 148, 82" value="1" type="GuiResourceData"/>
+<property name="datapath.sv, 157, 112" value="1" type="GuiResourceData"/>
+<property name="datapath.sv, 164, 74" value="1" type="GuiResourceData"/>
+<property name="datapath.sv, 181, 316" value="1" type="GuiResourceData"/>
+<property name="datapath.sv, 197, 297" value="1" type="GuiResourceData"/>
+<property name="datapath.sv, 20, 166" value="1" type="GuiResourceData"/>
+<property name="datapath.sv, 200, 296" value="1" type="GuiResourceData"/>
+<property name="datapath.sv, 217, 235" value="1" type="GuiResourceData"/>
+<property name="datapath.sv, 218, 75" value="1" type="GuiResourceData"/>
+<property name="datapath.sv, 220, 228" value="1" type="GuiResourceData"/>
+<property name="datapath.sv, 226, 226" value="1" type="GuiResourceData"/>
+<property name="datapath.sv, 227, 224" value="1" type="GuiResourceData"/>
+<property name="datapath.sv, 251, 199" value="1" type="GuiResourceData"/>
+<property name="datapath.sv, 253, 194" value="1" type="GuiResourceData"/>
+<property name="datapath.sv, 29, 198" value="1" type="GuiResourceData"/>
+<property name="datapath.sv, 29, 319" value="1" type="GuiResourceData"/>
+<property name="datapath.sv, 33, 193" value="1" type="GuiResourceData"/>
+<property name="datapath.sv, 37, 315" value="1" type="GuiResourceData"/>
+<property name="datapath.sv, 395, 169" value="1" type="GuiResourceData"/>
+<property name="datapath.sv, 402, 166" value="1" type="GuiResourceData"/>
+<property name="mem.sv, 29, 242" value="1" type="GuiResourceData"/>
+<property name="mem.sv, 30, 191" value="1" type="GuiResourceData"/>
+<property name="mem.sv, 99, 55" value="1" type="GuiResourceData"/>
+<property name="super_top_level.sv, 163, 69" value="1" type="GuiResourceData"/>
+<property name="super_top_level.sv, 170, 182" value="1" type="GuiResourceData"/>
+<property name="super_top_level.sv, 174, 170" value="1" type="GuiResourceData"/>
+<property name="super_top_level.sv, 275, 61" value="1" type="GuiResourceData"/>
+<property name="super_top_level.sv, 319, 60" value="1" type="GuiResourceData"/>
+<property name="super_top_level.sv, 326, 242" value="1" type="GuiResourceData"/>
+<property name="super_top_level.sv, 333, 72" value="1" type="GuiResourceData"/>
+<property name="super_top_level.sv, 496, 178" value="1" type="GuiResourceData"/>
+<property name="super_top_level.sv, 500, 182" value="1" type="GuiResourceData"/>
+<property name="super_top_level.sv, 525, 177" value="1" type="GuiResourceData"/>
+<property name="super_top_level.sv, 543, 193" value="1" type="GuiResourceData"/>
+<property name="super_top_level.sv, 59, 179" value="1" type="GuiResourceData"/>
+<property name="super_top_level.sv, 637, 164" value="1" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="70" type="GuiMode"/>
+<property name="GuiMode" value="71" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
 <property name="TclMode" value="49" type="TclMode"/>
 </item>
