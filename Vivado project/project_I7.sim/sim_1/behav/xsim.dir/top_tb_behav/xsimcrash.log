@@ -1,0 +1,48 @@
+Unable to capture context for thread 11312 in process 6240, can not generate back trace
+Unable to capture context for thread 8284 in process 6240, can not generate back trace
+Unable to capture context for thread 12360 in process 6240, can not generate back trace
+Unable to capture context for thread 13116 in process 6240, can not generate back trace
+Unable to capture context for thread 5124 in process 6240, can not generate back trace
+Unable to capture context for thread 11356 in process 6240, can not generate back trace
+Unable to capture context for thread 12512 in process 6240, can not generate back trace
+Unable to capture context for thread 11348 in process 6240, can not generate back trace
+Unable to capture context for thread 4716 in process 6240, can not generate back trace
+Exception at PC 0x00007FFE9AC33C58
+Exception at PC 0x00007FFE9AC33C58
+Exception at PC 0x00007FFE2628BB93
+Printing stacktrace...
+
+Exception at PC 0x00007FFE9AC33C58
+Exception at PC 0x00007FFE9AC33C58
+Exception at PC 0x00007FFE9AC33C58
+Exception at PC 0x00007FFE9AC33C58
+Exception at PC 0x00007FFE9AC33C58
+Exception at PC 0x00007FFE9AC33C58
+Exception at PC 0x00007FFE9AC33C58
+Exception at PC 0x00007FFE9AC33C58
+Exception at PC 0x00007FFE9AC33C58
+Exception at PC 0x00007FFE9AC33C58
+Exception at PC 0x00007FFE9AC33C58
+Exception at PC 0x00007FFE9AC33C58
+[0]  [0x00007FFE2628BB93]
+[1]  [0x00007FFE2628BB93]
+[2]  [0x00007FFE2628B4A1]
+[3]  [0x00007FFE2628B3EF]
+[4]  [0x00007FFE262719FE]
+[5]  [0x00007FFE26270ED1]
+[6]  [0x00007FFE26270D76]
+[7]  [0x00007FFE262179F6]
+[8]  [0x00007FFE26207AFB]
+[9]  [0x00007FFE2632E90A]
+[10]  [0x00007FFE26349F87]
+[11]  [0x00007FFE2634A05F]
+[12] (BaseThreadInitThunk+0x14) [0x00007FFE9CD98364]
+[13] (RtlUserThreadStart+0x21) [0x00007FFE9DA470D1]
+Done
+Exception at PC 0x00007FFE9AC33C58
+Exception at PC 0x00007FFE9AC33C58
+Exception at PC 0x00007FFE9AC33C58
+Exception at PC 0x00007FFE9AC33C58
+Exception at PC 0x00007FFE9AC33C58
+Exception at PC 0x00007FFE9AC33C58
+Exception at PC 0x00007FFE9AC33C58

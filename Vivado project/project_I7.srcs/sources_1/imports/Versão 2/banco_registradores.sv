@@ -22,7 +22,7 @@
 
 module banco_registradores#(parameter N= 4 ,M=4)(
     input logic clk,
-    input logic [3:0] W_addr, // Endereço para escrita do valor da sáida do mux 
+    input logic [3:0] W_addr, // Endereço para escrita do valor da saida do mux 
     input logic W_wr, // Habilita o escrita da entrada num registrador
     input logic [3:0] Rp_addr, // Endereço Rp
     input logic Rp_rd, // Habilita leitura do Rp

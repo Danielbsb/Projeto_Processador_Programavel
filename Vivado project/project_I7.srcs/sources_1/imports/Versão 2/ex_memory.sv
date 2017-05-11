@@ -8,7 +8,7 @@ module ex_memory(
   logic [255:0] mem [15:0];
   
   initial
-    $readmemh("C:/Users/Daniel/Documents/ARQUIVOS_FACULDADE/PROJETO_GILMAR/memdata.dat", mem);
+    $readmemh("C:/Users/Daniel/Documents/Projeto_Processadores/Projeto_Processador_Programavel/DAT files/Teste_input_output.dat", mem);
  
   always_comb
     if(rd) data <= mem[adr];

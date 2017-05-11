@@ -15,6 +15,8 @@ Compiling module xil_defaultlib.Bloco_de_Controle
 Compiling module xil_defaultlib.Unidade_controladora
 Compiling module xil_defaultlib.banco_registradores
 Compiling module xil_defaultlib.mux3
+Compiling module xil_defaultlib.Output_register
+Compiling module xil_defaultlib.Input_register
 Compiling module xil_defaultlib.memory
 Compiling module xil_defaultlib.ALU
 Compiling module xil_defaultlib.zero

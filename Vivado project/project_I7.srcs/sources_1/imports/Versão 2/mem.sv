@@ -6,8 +6,9 @@ module memory(input logic clk,
               input logic rd,
               input logic wr,
               input logic [15:0]W_data,
-              output logic [15:0]R_data,
-              output logic [15:0]leds);
+              output logic [15:0]R_data
+              //output logic [15:0]leds
+              );
 
  logic [15:0] mem[255:0]; //define o tamanho da memória 256x16
  

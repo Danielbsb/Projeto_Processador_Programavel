@@ -3,7 +3,7 @@
 module Unidade_controladora(
     input logic clk,
     input logic RF_Rp_zero,
-    input logic [15:0]sw,
+    //input logic [15:0]sw,
     output logic [7:0] D_addr,
     output logic D_rd,
     output logic D_wr,
@@ -19,7 +19,7 @@ module Unidade_controladora(
     output logic [3:0] ALU_s,
     output logic [2:0] shift,
     output logic InReg_ld,
-    output logic OutRed_ld
+    output logic OutReg_ld
     //output logic leds_en,
     //output logic leds_clr,
     //output logic mux_SW
@@ -28,15 +28,13 @@ module Unidade_controladora(
 logic [15:0] PC_out, PC_load, IR_out,data_exmemory; 
 logic PC_ld, PC_clr, PC_inc, IR_ld,I_rd;
 logic [15:0]out;
-logic [15:0]sw;
+logic [15:0]in;
 
 PC PC(clk, PC_ld, PC_clr, PC_inc, PC_load, PC_out);
 PC_somador PC_somador(IR_out, PC_out, PC_load);
 IR IR(clk, data_exmemory, IR_ld, IR_out);
 ex_memory ex_memory(PC_out,I_rd, data_exmemory);
-Bloco_de_Controle Bloco_de_Controle(clk,IR_out,RF_Rp_zero,IR_ld,I_rd,PC_ld,PC_clr,PC_inc,D_addr,D_rd,D_wr,RF_W_data,RF_s1,RF_s0,RF_W_addr,RF_W_wr,RF_Rp_addr,RF_Rp_rd,RF_Rq_addr,RF_Rq_rd,ALU_s,shift);
-Output_register(OutRed_ld,ld,out);
-Input_register(sw,InReg_ld,out);
+Bloco_de_Controle Bloco_de_Controle(clk,IR_out,RF_Rp_zero,IR_ld,I_rd,PC_ld,PC_clr,PC_inc,D_addr,D_rd,D_wr,RF_W_data,RF_s1,RF_s0,RF_W_addr,RF_W_wr,RF_Rp_addr,RF_Rp_rd,RF_Rq_addr,RF_Rq_rd,ALU_s,shift,InReg_ld,OutReg_ld);
 
 endmodule
 

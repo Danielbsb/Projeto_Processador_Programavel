@@ -24,7 +24,7 @@ module Bloco_de_Controle(
     output logic [3:0] ALU_s,
     output logic [2:0] deslocamento,
     output logic InReg_ld,
-    output logic OutRed_ld
+    output logic OutReg_ld
     //output logic leds_en,
     //output logic leds_clr,
     //output logic mux_SW
@@ -69,7 +69,7 @@ module Bloco_de_Controle(
       case(state)
         inicio:                                 nextstate = busca;
         busca:                                  nextstate = decodificacao;
-        decodificacao: case (opcode)
+        decodificacao:  case (opcode)
                                4'b0000:         nextstate = carregar;
                                4'b0001:         nextstate = armazenar;
                                4'b0010:         nextstate = somar;
@@ -104,20 +104,20 @@ module Bloco_de_Controle(
     assign PC_inc = (state == busca);
     assign IR_ld = (state == busca);
     assign D_rd = (state == carregar);
-    assign RF_s0 = (state == carregar);
-    assign RF_W_wr = (state == carregar) || (state == somar) || (state == carregar_constante) || (state == subtrair)||(state == shiftl) ||(state == shiftr);
+    assign RF_s0 = (state == carregar) || (state == inputS);
+    assign RF_W_wr = (state == carregar) || (state == somar) || (state == carregar_constante) || (state == subtrair)||(state == shiftl) ||(state == shiftr)||(state == inputS);
     assign D_wr = (state == armazenar);//|| state == inputS);
     assign RF_Rp_rd = (state == armazenar) || (state == somar) || (state == subtrair) || (state == saltar_se_zero) ||(state == shiftl) || (state == shiftr)|| (state == outputL);    
     assign RF_Rq_rd = (state == somar) || (state == subtrair)||(state == shiftl) ||(state == shiftr);
    // assign ALU_s0 = (state == somar) || (state == shiftl)||(state == shiftr);
-    assign RF_s1 = (state == carregar_constante);
+    assign RF_s1 = (state == carregar_constante) || (state == inputS);
    // assign ALU_s1 = (state == subtrair) || (state == shift);
     assign PC_ld = (state == saltar);
     //assign mux_SW = (state==inputS); 
     //assign leds_en = (state==outputL); 
     //assign leds_clr = ~(state==outputL || state == busca);
     assign InReg_ld = (state == inputS);
-    assign OutRed_ld = (state == outputL);
+    assign OutReg_ld = (state == outputL);
      
     //mult-bits outputs
     always_comb 
@@ -162,11 +162,11 @@ module Bloco_de_Controle(
         RF_Rq_addr = rc;
         ALU_s=4'b1001;
         end
-        //inputS : begin    // inputS não usa sinais com mais de bit. 
-        //    InReg_ld = d;
-        //end
+        inputS : begin    // inputS não usa sinais com mais de bit. 
+            RF_W_addr = ra;
+        end
         outputL: begin
-            RF_Rp_addr = rb;
+            RF_Rp_addr = ra;
         end    
       endcase
      

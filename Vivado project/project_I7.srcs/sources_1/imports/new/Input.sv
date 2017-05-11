@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 20.11.2016 17:10:44
+// Create Date: 05/08/2017 10:41:40 PM
 // Design Name: 
-// Module Name: mux3
+// Module Name: Input
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,16 +20,17 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module mux3(
-    input logic [15:0] d0, //ALU_out
-    input logic [15:0] d1, //D_R_data
-    input logic [15:0] d2, //RF_W_data
-    input logic [15:0] d3, //Input
-    input logic s1, //RF_s1
-    input logic s0, //RF_s0
-    output logic [15:0] out //W_data_in
+module Input_register(
+    input logic [15:0] sw,
+    input logic InReg_ld,
+    output logic [15:0] out
     );
     
-    assign out = s1 ? (s0 ? d3 : d2) : (s0 ? d1 : d0);
+    logic [15:0] regis;
+    
+    assign regis=sw;
+    
+    always_comb
+        if(InReg_ld) out <= regis;
     
 endmodule
