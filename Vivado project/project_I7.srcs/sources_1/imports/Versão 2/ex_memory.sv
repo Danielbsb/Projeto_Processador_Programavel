@@ -5,10 +5,10 @@ module ex_memory(
                  input logic rd,
                  output logic [15:0] data);
                  
-  logic [255:0] mem [15:0];
+  logic  [15:0]mem [255:0];
   
   initial
-    $readmemh("C:/Users/Daniel/Documents/Projeto_Processadores/Projeto_Processador_Programavel/DAT files/Teste_input_output.dat", mem);
+    $readmemh("C:/Users/Daniel/Documents/Projeto_Processadores/Projeto_Processador_Programavel/DAT files/test_all.dat", mem);
  
   always_comb
     if(rd) data <= mem[adr];

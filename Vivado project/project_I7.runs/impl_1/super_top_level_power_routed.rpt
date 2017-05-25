@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date             : Tue May 02 14:19:47 2017
+| Date             : Fri May 19 10:35:45 2017
 | Host             : DANIEL running 64-bit major release  (build 9200)
 | Command          : report_power -file super_top_level_power_routed.rpt -pb super_top_level_power_summary_routed.pb -rpx super_top_level_power_routed.rpx
 | Design           : super_top_level
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.077 |
-| Dynamic (W)              | 0.005 |
+| Total On-Chip Power (W)  | 0.080 |
+| Dynamic (W)              | 0.008 |
 | Device Static (W)        | 0.072 |
 | Effective TJA (C/W)      | 5.0   |
 | Max Ambient (C)          | 84.6  |
@@ -50,18 +50,18 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |    <0.001 |        3 |       --- |             --- |
-| Slice Logic              |    <0.001 |      604 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |      256 |     20800 |            1.23 |
+| Slice Logic              |    <0.001 |      395 |       --- |             --- |
+|   LUT as Logic           |    <0.001 |      228 |     20800 |            1.10 |
 |   LUT as Distributed RAM |    <0.001 |       24 |      9600 |            0.25 |
-|   CARRY4                 |    <0.001 |       10 |      8150 |            0.12 |
-|   Register               |    <0.001 |      219 |     41600 |            0.53 |
+|   CARRY4                 |    <0.001 |        8 |      8150 |            0.10 |
+|   Register               |    <0.001 |       65 |     41600 |            0.16 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
-|   F7/F8 Muxes            |    <0.001 |       17 |     32600 |            0.05 |
-|   Others                 |     0.000 |       16 |       --- |             --- |
-| Signals                  |    <0.001 |      522 |       --- |             --- |
-| I/O                      |     0.003 |       46 |       106 |           43.40 |
+|   Others                 |     0.000 |       22 |       --- |             --- |
+| Signals                  |     0.001 |      381 |       --- |             --- |
+| Block RAM                |    <0.001 |      0.5 |        50 |            1.00 |
+| I/O                      |     0.006 |       46 |       106 |           43.40 |
 | Static Power             |     0.072 |          |           |                 |
-| Total                    |     0.077 |          |           |                 |
+| Total                    |     0.080 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.012 |       0.002 |      0.010 |
+| Vccint    |       1.000 |     0.012 |       0.003 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
-| Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |
+| Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -140,14 +140,15 @@ Table of Contents
 +-----------------------------+-----------+
 | Name                        | Power (W) |
 +-----------------------------+-----------+
-| super_top_level             |     0.005 |
+| super_top_level             |     0.008 |
 |   Unidade_controladora      |    <0.001 |
 |     Bloco_de_Controle       |    <0.001 |
 |     IR                      |    <0.001 |
 |     PC                      |    <0.001 |
-|     PC_somador              |    <0.001 |
 |     ex_memory               |    <0.001 |
 |   datapath                  |    <0.001 |
+|     Input_register          |    <0.001 |
+|     Output_register         |    <0.001 |
 |     alunit                  |    <0.001 |
 |     mem1                    |    <0.001 |
 |     register                |    <0.001 |

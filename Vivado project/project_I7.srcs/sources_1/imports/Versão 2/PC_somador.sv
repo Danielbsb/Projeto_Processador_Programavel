@@ -25,7 +25,11 @@ module PC_somador(
     input logic [15:0] b, //PC_out
     output logic [15:0] out //PC_load
     );
-    
-    assign out = a + b - 1;
-    
+    logic [7:0] cmp2;
+    always_comb
+        if(a[7])
+           cmp2 <= b - {8'b0,~a[7:0]} - 1;
+        else
+           cmp2 <= {8'b0,a[7:0]} + b;
+    assign out = cmp2 - 1; 
 endmodule

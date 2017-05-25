@@ -2,8 +2,8 @@
 # Webtalk v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Wed May 10 21:32:55 2017
-# Process ID: 7008
+# Start of session at: Tue May 23 23:59:35 2017
+# Process ID: 3684
 # Current directory: C:/Users/Daniel/Documents/Projeto_Processadores/Projeto_Processador_Programavel/Vivado project/project_I7.sim/sim_1/behav
 # Command line: wbtcv.exe -mode batch -source C:/Users/Daniel/Documents/Projeto_Processadores/Projeto_Processador_Programavel/Vivado project/project_I7.sim/sim_1/behav/xsim.dir/top_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Users/Daniel/Documents/Projeto_Processadores/Projeto_Processador_Programavel/Vivado project/project_I7.sim/sim_1/behav/webtalk.log
@@ -15,4 +15,4 @@ ambiguous command name "******": after append apply array auto_execok auto_impor
     while executing
 "****** Webtalk v2016.2 (64-bit)"
     (file "C:/Users/Daniel/Documents/Projeto_Processadores/Projeto_Processador_Programavel/Vivado" line 2)
-INFO: [Common 17-206] Exiting Webtalk at Wed May 10 21:32:55 2017...
+INFO: [Common 17-206] Exiting Webtalk at Tue May 23 23:59:35 2017...

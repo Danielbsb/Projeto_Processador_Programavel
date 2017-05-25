@@ -11,11 +11,11 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="170000000fs"></ZoomStartTime>
-      <ZoomEndTime time="212000001fs"></ZoomEndTime>
-      <Cursor1Time time="205000000fs"></Cursor1Time>
+      <ZoomStartTime time="59500000fs"></ZoomStartTime>
+      <ZoomEndTime time="198100001fs"></ZoomEndTime>
+      <Cursor1Time time="125000000fs"></Cursor1Time>
    </zoom_setting>
-   <WVObjectSize size="10" />
+   <WVObjectSize size="9" />
    <wvobject fp_name="/top_tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -40,20 +40,16 @@
       <obj_property name="ElementShortName">segmentos[7:0]</obj_property>
       <obj_property name="ObjectShortName">segmentos[7:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/top_tb/dut/Unidade_controladora/PC_somador/a" type="array">
-      <obj_property name="ElementShortName">a[15:0]</obj_property>
-      <obj_property name="ObjectShortName">a[15:0]</obj_property>
+   <wvobject fp_name="/top_tb/dut/Unidade_controladora/Bloco_de_Controle/state" type="array">
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/top_tb/dut/Unidade_controladora/PC_somador/b" type="array">
-      <obj_property name="ElementShortName">b[15:0]</obj_property>
-      <obj_property name="ObjectShortName">b[15:0]</obj_property>
+   <wvobject fp_name="/top_tb/dut/Unidade_controladora/PC/load" type="array">
+      <obj_property name="ElementShortName">load[15:0]</obj_property>
+      <obj_property name="ObjectShortName">load[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/top_tb/dut/Unidade_controladora/PC_somador/out" type="array">
-      <obj_property name="ElementShortName">out[15:0]</obj_property>
-      <obj_property name="ObjectShortName">out[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/top_tb/dut/Unidade_controladora/PC_somador/cmp2" type="array">
-      <obj_property name="ElementShortName">cmp2[15:0]</obj_property>
-      <obj_property name="ObjectShortName">cmp2[15:0]</obj_property>
+   <wvobject fp_name="/top_tb/dut/Unidade_controladora/ex_memory/data" type="array">
+      <obj_property name="ElementShortName">data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data[15:0]</obj_property>
    </wvobject>
 </wave_config>

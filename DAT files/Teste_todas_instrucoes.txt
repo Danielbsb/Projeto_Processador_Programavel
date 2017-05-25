@@ -1,0 +1,52 @@
+MOV Ra,d          -> carregar 0000
+MOV d, Ra         -> armazenar 0001
+ADD Ra,Rb,Rc      -> 0010
+MOV Ra, #c        -> carregar const 0011
+SUB Ra,Rb,Rc      -> 0100
+JUMPZ Ra, offset  -> 0101
+SL Ra,Rb,Rc	 ; Rc = Ra << Rb  ->0110
+SR Ra,Rb,Rc 	 ; Rc = Ra >> Rb  ->0111
+OUT Ra		  -> 1001
+IN Ra		  -> 1000
+
+//-----------------------------------//
+
+1	IN R0	     ; envia o que está nos "Switches" para o registrador R0
+2	MOV #1,R3    ; carrega const(1) no R3
+3	MOV #2, R1   ; carrega const(2) no R1 
+4	MOV R0,9     ; envia R0 (switches) para Mem[9]
+5	SUB R0,R0,R0 ; zera o conteúdo de R0 (carregado anteriormente pelos switches)
+6	JUMPZ R0,#3     ; pula para a linha 8
+7	ADD R0,R1,R0 ; não deve executar essa instrução primeiramente
+8	OUT R0	     ; mostra R0(2) nos displays       
+9	SL R3,R3,R1  ; r3 = 1 << 2
+10	SR R3,R3,R3  ; r3 = 4 >> 4
+11	MOV 9, R3    ; Carrega o conteudo da memória p/R3
+12	OUT R3 	     ; Exibe o valor de R3(switches) nos displays.
+13	SUB R3,R3,R3 ; Zera R3
+14	JUMPZ 0,#-7     ; Volta e execulta a partir da linha 7.
+
+//-----------------------------------//
+
+Instuction =>	| XXXX  |XXXX |XXXX XXXX|
+  16 bit  	|15---12-11--8-7-------0|
+		|Opcode | ra  | rb   rc |
+		|       |     |#c/offset|
+//-----------------------------------//
+
+8000
+3301
+3102
+1009
+4000
+5009
+2010
+9000
+6331
+7333
+0309
+9300
+4333
+5007
+
+A instrução JUMPZ não funcionou ... modifiquei o tamanho do vetor LOAD do PC.

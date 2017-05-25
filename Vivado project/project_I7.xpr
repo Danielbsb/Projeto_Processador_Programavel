@@ -26,7 +26,7 @@
     <Option Name="IPStaticSourceDir" Val="$PPRDIR/project_I7.ip_user_files/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="basys3"/>
-    <Option Name="WTXSimLaunchSim" Val="74"/>
+    <Option Name="WTXSimLaunchSim" Val="99"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -239,12 +239,12 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/top_tb_behav.wcfg">
+      <File Path="$PPRDIR/top_tb_behav1.wcfg">
         <FileInfo>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/top_tb_behav1.wcfg">
+      <File Path="$PPRDIR/top_tb_behav.wcfg">
         <FileInfo>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -260,6 +260,11 @@
         <Option Name="XSimWcfgFile" Val="$PPRDIR/../project_4/top_tb_behav.wcfg"/>
         <Option Name="XSimWcfgFile" Val="$PPRDIR/top_tb_behav.wcfg"/>
         <Option Name="XSimWcfgFile" Val="$PPRDIR/top_tb_behav.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/top_tb_behav1.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/top_tb_behav.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/top_tb_behav.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/top_tb_behav.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/top_tb_behav1.wcfg"/>
         <Option Name="XSimWcfgFile" Val="$PPRDIR/top_tb_behav1.wcfg"/>
         <Option Name="XSimWcfgFile" Val="$PPRDIR/top_tb_behav.wcfg"/>
         <Option Name="xsim.simulate.runtime" Val="200ns"/>
