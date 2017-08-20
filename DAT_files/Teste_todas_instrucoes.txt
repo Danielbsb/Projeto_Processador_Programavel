@@ -16,7 +16,7 @@ IN Ra		  -> 1000
 3	MOV #2, R1   ; carrega const(2) no R1 
 4	MOV R0,9     ; envia R0 (switches) para Mem[9]
 5	SUB R0,R0,R0 ; zera o conteúdo de R0 (carregado anteriormente pelos switches)
-6	JUMPZ R0,#3     ; pula para a linha 8
+6	JUMPZ R0,#3  ; pula para a linha 9
 7	ADD R0,R1,R0 ; não deve executar essa instrução primeiramente
 8	OUT R0	     ; mostra R0(2) nos displays       
 9	SL R3,R3,R1  ; r3 = 1 << 2

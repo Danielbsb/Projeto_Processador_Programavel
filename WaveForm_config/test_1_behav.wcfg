@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test_1_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test_1" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2757750000fs"></ZoomStartTime>
+      <ZoomEndTime time="3161250001fs"></ZoomEndTime>
+      <Cursor1Time time="2875000000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/test_1/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_1/clk_m" type="logic">
+      <obj_property name="ElementShortName">clk_m</obj_property>
+      <obj_property name="ObjectShortName">clk_m</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_1/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_1/sw" type="array">
+      <obj_property name="ElementShortName">sw[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_1/leds" type="array">
+      <obj_property name="ElementShortName">leds[15:0]</obj_property>
+      <obj_property name="ObjectShortName">leds[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_1/anodos" type="array">
+      <obj_property name="ElementShortName">anodos[3:0]</obj_property>
+      <obj_property name="ObjectShortName">anodos[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_1/segmentos" type="array">
+      <obj_property name="ElementShortName">segmentos[7:0]</obj_property>
+      <obj_property name="ObjectShortName">segmentos[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_1/dut/processador_top/unidade_controle/bloco_controle/state" type="array">
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_1/dut/processador_top/bloco_operacional/memoria/mem[9]" type="array">
+      <obj_property name="ElementShortName">[9][15:0]</obj_property>
+      <obj_property name="ObjectShortName">[9][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_1/dut/processador_top/bloco_operacional/banco_registradores/mem[0]" type="array">
+      <obj_property name="ElementShortName">[0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">[0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_1/dut/processador_top/bloco_operacional/banco_registradores/mem[1]" type="array">
+      <obj_property name="ElementShortName">[1][15:0]</obj_property>
+      <obj_property name="ObjectShortName">[1][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_1/dut/processador_top/bloco_operacional/banco_registradores/mem[2]" type="array">
+      <obj_property name="ElementShortName">[2][15:0]</obj_property>
+      <obj_property name="ObjectShortName">[2][15:0]</obj_property>
+   </wvobject>
+</wave_config>
