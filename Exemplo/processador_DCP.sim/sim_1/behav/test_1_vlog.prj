@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  "../../../processador_DCP.srcs/sources_1/new/memoria_instrucoes.sv"
+sv xil_defaultlib  "../../../processador_DCP.srcs/sources_1/new/top_module.sv"
+sv xil_defaultlib  "../../../processador_DCP.srcs/sim_1/new/test_1.sv"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

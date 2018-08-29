@@ -1,0 +1,6 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "test_1_func_synth.v"
+sv xil_defaultlib  "../../../../processador_DCP.srcs/sim_1/new/test_1.sv"
+
+# Do not sort compile order
+nosort

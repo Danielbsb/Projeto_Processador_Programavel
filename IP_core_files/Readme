@@ -1,4 +1,0 @@
-processador_DCP: top level com o arquivo de sintese do processador;
-processador_IP: top level com IP
-processador_top_module: feito todo em verilog
-processador: "miolo" do processador que tem que pendurar a memória de instruções junta

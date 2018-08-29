@@ -1,0 +1,454 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue Jun 13 09:28:42 2017
+# Process ID: 5032
+# Current directory: C:/Users/Haroldo/Documents/PCID/processador/processador.runs/synth_1
+# Command line: vivado.exe -log processador_top.vds -mode batch -messageDb vivado.pb -notrace -source processador_top.tcl
+# Log file: C:/Users/Haroldo/Documents/PCID/processador/processador.runs/synth_1/processador_top.vds
+# Journal file: C:/Users/Haroldo/Documents/PCID/processador/processador.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source processador_top.tcl -notrace
+Command: synth_design -top processador_top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7016 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 273.367 ; gain = 66.707
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'processador_top' [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/processador_top.sv:3]
+INFO: [Synth 8-638] synthesizing module 'unidade_controle' [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/unidade_controle.sv:3]
+INFO: [Synth 8-638] synthesizing module 'PC' [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/PC.sv:3]
+INFO: [Synth 8-256] done synthesizing module 'PC' (1#1) [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/PC.sv:3]
+INFO: [Synth 8-638] synthesizing module 'PC_somador' [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/PC_somador.sv:3]
+INFO: [Synth 8-256] done synthesizing module 'PC_somador' (2#1) [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/PC_somador.sv:3]
+INFO: [Synth 8-638] synthesizing module 'IR' [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/IR.sv:3]
+INFO: [Synth 8-256] done synthesizing module 'IR' (3#1) [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/IR.sv:3]
+INFO: [Synth 8-638] synthesizing module 'bloco_controle' [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/bloco_controle.sv:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/bloco_controle.sv:118]
+WARNING: [Synth 8-87] always_comb on 'D_addr_reg' did not result in combinational logic [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/bloco_controle.sv:120]
+WARNING: [Synth 8-87] always_comb on 'RF_W_addr_reg' did not result in combinational logic [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/bloco_controle.sv:121]
+WARNING: [Synth 8-87] always_comb on 'ALU_s_reg' did not result in combinational logic [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/bloco_controle.sv:122]
+WARNING: [Synth 8-87] always_comb on 'RF_Rp_addr_reg' did not result in combinational logic [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/bloco_controle.sv:126]
+WARNING: [Synth 8-87] always_comb on 'RF_Rq_addr_reg' did not result in combinational logic [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/bloco_controle.sv:131]
+INFO: [Synth 8-256] done synthesizing module 'bloco_controle' (4#1) [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/bloco_controle.sv:3]
+INFO: [Synth 8-256] done synthesizing module 'unidade_controle' (5#1) [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/unidade_controle.sv:3]
+INFO: [Synth 8-638] synthesizing module 'bloco_operacional' [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/bloco_operacional.sv:3]
+INFO: [Synth 8-638] synthesizing module 'banco_registradores' [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/banco_registradores.sv:3]
+	Parameter N bound to: 4 - type: integer 
+	Parameter M bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'banco_registradores' (6#1) [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/banco_registradores.sv:3]
+INFO: [Synth 8-638] synthesizing module 'mux4' [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/mux4.sv:3]
+INFO: [Synth 8-256] done synthesizing module 'mux4' (7#1) [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/mux4.sv:3]
+INFO: [Synth 8-638] synthesizing module 'register' [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/register.sv:3]
+	Parameter M bound to: 16 - type: integer 
+WARNING: [Synth 8-87] always_comb on 'out_reg' did not result in combinational logic [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/register.sv:12]
+INFO: [Synth 8-256] done synthesizing module 'register' (8#1) [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/register.sv:3]
+INFO: [Synth 8-638] synthesizing module 'memoria' [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/memoria.sv:3]
+	Parameter N bound to: 8 - type: integer 
+	Parameter M bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'memoria' (9#1) [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/memoria.sv:3]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/ALU.sv:3]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (10#1) [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/ALU.sv:3]
+INFO: [Synth 8-638] synthesizing module 'zero' [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/zero.sv:3]
+INFO: [Synth 8-256] done synthesizing module 'zero' (11#1) [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/zero.sv:3]
+INFO: [Synth 8-256] done synthesizing module 'bloco_operacional' (12#1) [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/bloco_operacional.sv:3]
+INFO: [Synth 8-638] synthesizing module 'decoder_7seg' [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/decoder_7seg.sv:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/decoder_7seg.sv:51]
+INFO: [Synth 8-256] done synthesizing module 'decoder_7seg' (13#1) [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/decoder_7seg.sv:3]
+INFO: [Synth 8-256] done synthesizing module 'processador_top' (14#1) [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/processador_top.sv:3]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 310.641 ; gain = 103.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 310.641 ; gain = 103.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 310.641 ; gain = 103.980
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/PC_somador.sv:10]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'bloco_controle'
+INFO: [Synth 8-5544] ROM "RF_Rq_addr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RF_Rp_addr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ALU_s" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RF_W_addr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "D_addr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/ALU.sv:12]
+INFO: [Synth 8-5546] ROM "out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_div" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  inicio |                             0000 |                             0000
+                   busca |                             0001 |                             0001
+           decodificacao |                             0010 |                             0010
+                carregar |                             0011 |                             0011
+               armazenar |                             0100 |                             0100
+                   somar |                             0101 |                             0101
+      carregar_constante |                             0110 |                             0110
+                subtrair |                             0111 |                             0111
+          saltar_se_zero |                             1000 |                             1000
+                  saltar |                             1101 |                             1001
+                  shiftl |                             1001 |                             1010
+                  shiftr |                             1010 |                             1011
+                  inputS |                             1011 |                             1100
+                 outputL |                             1100 |                             1101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'bloco_controle'
+WARNING: [Synth 8-327] inferring latch for variable 'D_addr_reg' [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/bloco_controle.sv:120]
+WARNING: [Synth 8-327] inferring latch for variable 'RF_W_addr_reg' [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/bloco_controle.sv:121]
+WARNING: [Synth 8-327] inferring latch for variable 'RF_Rp_addr_reg' [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/bloco_controle.sv:126]
+WARNING: [Synth 8-327] inferring latch for variable 'RF_Rq_addr_reg' [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/bloco_controle.sv:131]
+WARNING: [Synth 8-327] inferring latch for variable 'ALU_s_reg' [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/bloco_controle.sv:122]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg' [C:/Users/Haroldo/Documents/PCID/processador/processador.srcs/sources_1/new/register.sv:12]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 340.348 ; gain = 133.688
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   4 Input      8 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	               4K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   6 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	  16 Input      8 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+	  26 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	  11 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module PC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module PC_somador 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module IR 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module bloco_controle 
+Detailed RTL Component Info : 
++---Muxes : 
+	  11 Input      4 Bit        Muxes := 1     
+	  26 Input      4 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 5     
+Module mux4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+Module memoria 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---RAMs : 
+	               4K Bit         RAMs := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
++---Muxes : 
+	   6 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+Module zero 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module decoder_7seg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	  16 Input      8 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 426.402 ; gain = 219.742
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "bloco_operacional/zero/out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "decoder_7seg/clk_div" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design processador_top has port segmentos[0] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 426.945 ; gain = 220.285
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 426.945 ; gain = 220.285
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM bloco_operacional/memoria/mem_reg to conserve power
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|memoria     | mem_reg    | 256 x 16(READ_FIRST)   | W |   | 256 x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++----------------+-----------------------------------------------+-----------+----------------------+--------------+
+|Module Name     | RTL Object                                    | Inference | Size (Depth x Width) | Primitives   | 
++----------------+-----------------------------------------------+-----------+----------------------+--------------+
+|processador_top | bloco_operacional/banco_registradores/mem_reg | Implied   | 16 x 16              | RAM32M x 6   | 
++----------------+-----------------------------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 449.965 ; gain = 243.305
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 449.965 ; gain = 243.305
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 449.965 ; gain = 243.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance bloco_operacional/memoria/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 449.965 ; gain = 243.305
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 449.965 ; gain = 243.305
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 449.965 ; gain = 243.305
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 449.965 ; gain = 243.305
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 449.965 ; gain = 243.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 449.965 ; gain = 243.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 449.965 ; gain = 243.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 449.965 ; gain = 243.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 449.965 ; gain = 243.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |    10|
+|3     |LUT1     |    19|
+|4     |LUT2     |    36|
+|5     |LUT3     |    24|
+|6     |LUT4     |    51|
+|7     |LUT5     |    40|
+|8     |LUT6     |   112|
+|9     |MUXF7    |    16|
+|10    |RAM32M   |     6|
+|11    |RAMB18E1 |     1|
+|12    |FDCE     |     4|
+|13    |FDRE     |    43|
+|14    |FDSE     |     3|
+|15    |LD       |    23|
+|16    |LDC      |    32|
+|17    |IBUF     |    35|
+|18    |OBUF     |    37|
++------+---------+------+
+
+Report Instance Areas: 
++------+------------------------+--------------------+------+
+|      |Instance                |Module              |Cells |
++------+------------------------+--------------------+------+
+|1     |top                     |                    |   494|
+|2     |  bloco_operacional     |bloco_operacional   |   225|
+|3     |    ALU                 |ALU                 |     4|
+|4     |    banco_registradores |banco_registradores |   171|
+|5     |    input_register      |register            |    29|
+|6     |    memoria             |memoria             |     1|
+|7     |    output_register     |register_0          |    20|
+|8     |  decoder_7seg          |decoder_7seg        |    77|
+|9     |  unidade_controle      |unidade_controle    |   117|
+|10    |    IR                  |IR                  |    24|
+|11    |    PC                  |PC                  |    29|
+|12    |    PC_somador          |PC_somador          |     2|
+|13    |    bloco_controle      |bloco_controle      |    62|
++------+------------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 449.965 ; gain = 243.305
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 449.965 ; gain = 243.305
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 449.965 ; gain = 243.305
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 107 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 61 instances were transformed.
+  LD => LDCE: 23 instances
+  LDC => LDCE: 32 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+56 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 513.320 ; gain = 306.660
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 513.320 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 13 09:29:18 2017...

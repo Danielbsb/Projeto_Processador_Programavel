@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test_1_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test_1" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1202190000fs"></ZoomStartTime>
+      <ZoomEndTime time="1744190001fs"></ZoomEndTime>
+      <Cursor1Time time="2309940000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/test_1/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_1/clk_m" type="logic">
+      <obj_property name="ElementShortName">clk_m</obj_property>
+      <obj_property name="ObjectShortName">clk_m</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_1/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_1/sw" type="array">
+      <obj_property name="ElementShortName">sw[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_1/leds" type="array">
+      <obj_property name="ElementShortName">leds[15:0]</obj_property>
+      <obj_property name="ObjectShortName">leds[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_1/dut/processador_top/unidade_controle/bloco_controle/state" type="array">
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_1/dut/processador_top/unidade_controle/bloco_controle/nextstate" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">nextstate[3:0]</obj_property>
+      <obj_property name="ObjectShortName">nextstate[3:0]</obj_property>
+      <obj_property name="label">nextstate</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_1/dut/processador_top/bloco_operacional/memoria/mem[9]" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[9][15:0]</obj_property>
+      <obj_property name="ObjectShortName">[9][15:0]</obj_property>
+      <obj_property name="label">mem[9][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_1/dut/processador_top/bloco_operacional/banco_registradores/mem[0]" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">[0][15:0]</obj_property>
+      <obj_property name="label">Reg[0][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_1/dut/processador_top/bloco_operacional/banco_registradores/mem[1]" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[1][15:0]</obj_property>
+      <obj_property name="ObjectShortName">[1][15:0]</obj_property>
+      <obj_property name="label">Reg[1][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_1/dut/processador_top/bloco_operacional/banco_registradores/mem[3]" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[3][15:0]</obj_property>
+      <obj_property name="ObjectShortName">[3][15:0]</obj_property>
+      <obj_property name="label">Reg[3][15:0]</obj_property>
+   </wvobject>
+</wave_config>

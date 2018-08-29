@@ -1,0 +1,53 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 192754afe6d44059b947d2f973e30b29 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot test_1_func_synth xil_defaultlib.test_1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.latchsre_ldce
+Compiling module unisims_ver.LDCE
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.x_lut3_mux4
+Compiling module unisims_ver.x_lut3_mux4_reduced_0
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module xil_defaultlib.memoria_instrucoes
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.ALU
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.RAM32M
+Compiling module unisims_ver.MUXF7
+Compiling module unisims_ver.LUT6
+Compiling module xil_defaultlib.banco_registradores
+Compiling module xil_defaultlib.register
+Compiling module unisims_ver.RB18_INTERNAL_VLOG(DOA_REG=0,DOB...
+Compiling module unisims_ver.RAMB18E1(IS_CLKBWRCLK_INVERTED=1...
+Compiling module xil_defaultlib.memoria
+Compiling module xil_defaultlib.register_0
+Compiling module xil_defaultlib.bloco_operacional
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.sffsrce_fdre
+Compiling module unisims_ver.FDRE
+Compiling module unisims_ver.sffsrce_fdse
+Compiling module unisims_ver.FDSE
+Compiling module xil_defaultlib.decoder_7seg
+Compiling module xil_defaultlib.IR
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PC_somador
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.ffsrce_fdce
+Compiling module unisims_ver.FDCE
+Compiling module xil_defaultlib.bloco_controle
+Compiling module xil_defaultlib.unidade_controle
+Compiling module xil_defaultlib.processador_top
+Compiling module xil_defaultlib.top_module
+Compiling module xil_defaultlib.test_1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_1_func_synth

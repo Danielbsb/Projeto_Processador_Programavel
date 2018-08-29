@@ -1,0 +1,19 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Haroldo/Documents/PCID/processador_DCP/processador_DCP.sim/sim_1/synth/func/test_1_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processador_top
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module IR
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-311] analyzing module PC_somador
+INFO: [VRFC 10-311] analyzing module banco_registradores
+INFO: [VRFC 10-311] analyzing module bloco_controle
+INFO: [VRFC 10-311] analyzing module bloco_operacional
+INFO: [VRFC 10-311] analyzing module decoder_7seg
+INFO: [VRFC 10-311] analyzing module memoria
+INFO: [VRFC 10-311] analyzing module memoria_instrucoes
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module register_0
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-311] analyzing module unidade_controle
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Haroldo/Documents/PCID/processador_DCP/processador_DCP.srcs/sim_1/new/test_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_1
